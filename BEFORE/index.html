@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - BROKEN VERSION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="warning-banner">
+            ⚠️ BEFORE: This is the intentionally broken version
+            </div>
+
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team</p>
+
+            <form id="contactForm">
+                <!-- No proper labels or accessibility features -->
+                 <div>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                 </div>
+
+                 <div>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+
+                <div>
+                    <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+                </div>
+
+                <!-- No honeypot field for spam protection -->
+
+                <!-- Inline onclick - bad practice -->
+                 <button type="button" onclick="handleSubmit()">Send Message</button>
+            </form>
+
+            <div id="feedback"></div>
+        </div>
+
+        <script src="broken-form.js"></script>
+</body>
+</html>

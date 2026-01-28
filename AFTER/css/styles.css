@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.success-banner {
+    background: #10b981;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.warning-banner {
+    background: #ff6b6b;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+h1 {
+    color: #1f2937;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+p {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.required {
+    color: #ef4444;
+}
+
+/* Input styles */
+input, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Valid state */
+input.valid, textarea.valid {
+    border-color: #10b981;
+}
+
+/* Error state */
+input.error, textarea.error {
+    border-color: #ef4444;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Error messages */
+.error-message {
+    display: block;
+    color: #ef4444;
+    font-size: 14px;
+    margin-top: 6px;
+    min-height: 20px;
+}
+
+/* Honeypot - hidden from users */
+#website {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-loader {
+    display: inline-block;
+}
+
+/* Status messages */
+#formStatus {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+}
+
+#formStatus.success {
+    display: block;
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #10b981;
+}
+
+#formStatus.error {
+    display: block;
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #ef4444;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .container {
+        padding: 24px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+.shake {
+    animation: shake 0.4s ease;
+}
+
+/* Loading animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.btn-loader::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.6s linear infinite;
+}

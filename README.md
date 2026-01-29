@@ -3,6 +3,10 @@
 > **Portfolio Project by Borivoje Kostadinovic**  
 > Demonstrating form debugging, spam prevention, and production-ready fixes for broken contact forms
 
+## 🚀 Live Demo
+
+**Try it now:** https://contact-form-rescue-bora.netlify.app/
+
 ---
 
 ## 🚨 The Problem
@@ -302,9 +306,9 @@ Need help with a similar project?
 
 ## 🔗 Related Projects
 
-Coming soon:
-- Dashboard Completion & Data Export Fixer
-- AI Prompt Library Tool
+**Also in my portfolio:**
+- [Dashboard Rescue & CSV Fixer](https://github.com/bKostadinovic/dashboard-rescue-csv-fixer) - Complete abandoned dashboards with working exports → [Live Demo](https://dashboard-rescue-bora.netlify.app/)
+- [Prompt Library Organizer](https://github.com/bKostadinovic/prompt-library-organizer) - Organize AI prompts without SaaS subscriptions → [Live Demo](https://prompt-library-bora.netlify.app/)
 
 ---
 
